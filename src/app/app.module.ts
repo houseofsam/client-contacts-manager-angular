@@ -10,11 +10,13 @@ import { CompanyModule } from './company/company.module';
 import { SharedModule } from './shared/shared/shared.module';
 import { CustomMaterialModule } from './custom-material/custom-material.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
