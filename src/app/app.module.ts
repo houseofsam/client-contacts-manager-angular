@@ -11,13 +11,11 @@ import { ClientFormComponent } from './clients/client-form/client-form.component
 import { AdminModuleModule } from './admin/admin-module/admin-module.module';
 import { ClientModule } from './clients/client.module';
 import { CompanyModule } from './company/company/company.module';
+import { SharedModule } from './shared/shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ClientPageComponent,
-    SearchFormComponent,
-    ClientFormComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +23,7 @@ import { CompanyModule } from './company/company/company.module';
     BrowserAnimationsModule,
     ClientModule,
     CompanyModule,
+    SharedModule,
     FormsModule,
     ReactiveFormsModule,
     AdminModuleModule,
