@@ -8,6 +8,7 @@ import { ClientPageComponent } from './clients/client-page/client-page.component
 import { SearchFormComponent } from './search/search-form/search-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ClientFormComponent } from './clients/client-form/client-form.component';
+import { AdminModuleModule } from './admin/admin-module/admin-module.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ClientFormComponent } from './clients/client-form/client-form.component
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    AdminModuleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
