@@ -9,6 +9,8 @@ import { SearchFormComponent } from './search/search-form/search-form.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ClientFormComponent } from './clients/client-form/client-form.component';
 import { AdminModuleModule } from './admin/admin-module/admin-module.module';
+import { ClientModule } from './clients/client.module';
+import { CompanyModule } from './company/company/company.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { AdminModuleModule } from './admin/admin-module/admin-module.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ClientModule,
+    CompanyModule,
     FormsModule,
     ReactiveFormsModule,
     AdminModuleModule,
