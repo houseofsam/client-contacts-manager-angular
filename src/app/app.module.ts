@@ -11,6 +11,7 @@ import { SharedModule } from './shared/shared/shared.module';
 import { CustomMaterialModule } from './custom-material/custom-material.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { AboutModule } from './about/about.module';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { NavigationComponent } from './navigation/navigation.component';
     SharedModule,
     CustomMaterialModule,
     AdminModuleModule,
+    AboutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
