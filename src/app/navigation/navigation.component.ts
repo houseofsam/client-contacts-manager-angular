@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navigation',
@@ -8,9 +9,14 @@ import { Component, Input, OnInit } from '@angular/core';
 export class NavigationComponent implements OnInit {
   @Input() title: string | undefined;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  goTo(location: string) {
+    console.log(location);
+    this.router.navigateByUrl(location);
   }
 
 }
