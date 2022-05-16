@@ -12,6 +12,10 @@ import { CustomMaterialModule } from './custom-material/custom-material.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AboutModule } from './about/about.module';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './services/in-memory-data.service';
+import { ClientService } from './clients/client.service';
 
 @NgModule({
   declarations: [
@@ -21,6 +25,8 @@ import { AboutModule } from './about/about.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService),
     AppRoutingModule,
     BrowserAnimationsModule,
     ClientModule,
@@ -30,7 +36,7 @@ import { AboutModule } from './about/about.module';
     AdminModuleModule,
     AboutModule,
   ],
-  providers: [],
+  providers: [ClientService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
